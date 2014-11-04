@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAE5AE2C1A09429E00E73566 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE5AE2B1A09429E00E73566 /* main.m */; };
+		AAE5AE371A09429E00E73566 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE5AE361A09429E00E73566 /* Images.xcassets */; };
+		AAE5AE3A1A09429E00E73566 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE5AE381A09429E00E73566 /* LaunchScreen.xib */; };
+		AAE5AE461A09429E00E73566 /* AddressbookPullAndMulti_SelectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE5AE451A09429E00E73566 /* AddressbookPullAndMulti_SelectTests.m */; };
+		AAE5AE5B1A0942B400E73566 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE5AE501A0942B400E73566 /* AppDelegate.m */; };
+		AAE5AE5C1A0942B400E73566 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE5AE521A0942B400E73566 /* Contact.m */; };
+		AAE5AE5D1A0942B400E73566 /* LandingPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE5AE541A0942B400E73566 /* LandingPageController.m */; };
+		AAE5AE5E1A0942B400E73566 /* LandingPageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE5AE551A0942B400E73566 /* LandingPageController.xib */; };
+		AAE5AE5F1A0942B400E73566 /* TBMultiselectController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE5AE571A0942B400E73566 /* TBMultiselectController.m */; };
+		AAE5AE601A0942B400E73566 /* TBMultiselectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE5AE581A0942B400E73566 /* TBMultiselectController.xib */; };
+		AAE5AE611A0942B400E73566 /* TBContactsGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE5AE5A1A0942B400E73566 /* TBContactsGrabber.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAE5AE401A09429E00E73566 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE5AE1E1A09429E00E73566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAE5AE251A09429E00E73566;
+			remoteInfo = "AddressbookPullAndMulti-Select";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAE5AE261A09429E00E73566 /* AddressbookPullAndMulti-Select.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AddressbookPullAndMulti-Select.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE5AE2A1A09429E00E73566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE5AE2B1A09429E00E73566 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAE5AE361A09429E00E73566 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AAE5AE391A09429E00E73566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AAE5AE3F1A09429E00E73566 /* AddressbookPullAndMulti-SelectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AddressbookPullAndMulti-SelectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE5AE441A09429E00E73566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE5AE451A09429E00E73566 /* AddressbookPullAndMulti_SelectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressbookPullAndMulti_SelectTests.m; sourceTree = "<group>"; };
+		AAE5AE4F1A0942B400E73566 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAE5AE501A0942B400E73566 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAE5AE511A0942B400E73566 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		AAE5AE521A0942B400E73566 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		AAE5AE531A0942B400E73566 /* LandingPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingPageController.h; sourceTree = "<group>"; };
+		AAE5AE541A0942B400E73566 /* LandingPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingPageController.m; sourceTree = "<group>"; };
+		AAE5AE551A0942B400E73566 /* LandingPageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingPageController.xib; sourceTree = "<group>"; };
+		AAE5AE561A0942B400E73566 /* TBMultiselectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMultiselectController.h; sourceTree = "<group>"; };
+		AAE5AE571A0942B400E73566 /* TBMultiselectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMultiselectController.m; sourceTree = "<group>"; };
+		AAE5AE581A0942B400E73566 /* TBMultiselectController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBMultiselectController.xib; sourceTree = "<group>"; };
+		AAE5AE591A0942B400E73566 /* TBContactsGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBContactsGrabber.h; sourceTree = "<group>"; };
+		AAE5AE5A1A0942B400E73566 /* TBContactsGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBContactsGrabber.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAE5AE231A09429E00E73566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE5AE3C1A09429E00E73566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAE5AE1D1A09429E00E73566 = {
+			isa = PBXGroup;
+			children = (
+				AAE5AE281A09429E00E73566 /* AddressbookPullAndMulti-Select */,
+				AAE5AE421A09429E00E73566 /* AddressbookPullAndMulti-SelectTests */,
+				AAE5AE271A09429E00E73566 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAE5AE271A09429E00E73566 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5AE261A09429E00E73566 /* AddressbookPullAndMulti-Select.app */,
+				AAE5AE3F1A09429E00E73566 /* AddressbookPullAndMulti-SelectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAE5AE281A09429E00E73566 /* AddressbookPullAndMulti-Select */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5AE4F1A0942B400E73566 /* AppDelegate.h */,
+				AAE5AE501A0942B400E73566 /* AppDelegate.m */,
+				AAE5AE511A0942B400E73566 /* Contact.h */,
+				AAE5AE521A0942B400E73566 /* Contact.m */,
+				AAE5AE531A0942B400E73566 /* LandingPageController.h */,
+				AAE5AE541A0942B400E73566 /* LandingPageController.m */,
+				AAE5AE551A0942B400E73566 /* LandingPageController.xib */,
+				AAE5AE561A0942B400E73566 /* TBMultiselectController.h */,
+				AAE5AE571A0942B400E73566 /* TBMultiselectController.m */,
+				AAE5AE581A0942B400E73566 /* TBMultiselectController.xib */,
+				AAE5AE591A0942B400E73566 /* TBContactsGrabber.h */,
+				AAE5AE5A1A0942B400E73566 /* TBContactsGrabber.m */,
+				AAE5AE361A09429E00E73566 /* Images.xcassets */,
+				AAE5AE381A09429E00E73566 /* LaunchScreen.xib */,
+				AAE5AE291A09429E00E73566 /* Supporting Files */,
+			);
+			path = "AddressbookPullAndMulti-Select";
+			sourceTree = "<group>";
+		};
+		AAE5AE291A09429E00E73566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5AE2A1A09429E00E73566 /* Info.plist */,
+				AAE5AE2B1A09429E00E73566 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAE5AE421A09429E00E73566 /* AddressbookPullAndMulti-SelectTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5AE451A09429E00E73566 /* AddressbookPullAndMulti_SelectTests.m */,
+				AAE5AE431A09429E00E73566 /* Supporting Files */,
+			);
+			path = "AddressbookPullAndMulti-SelectTests";
+			sourceTree = "<group>";
+		};
+		AAE5AE431A09429E00E73566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5AE441A09429E00E73566 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAE5AE251A09429E00E73566 /* AddressbookPullAndMulti-Select */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE5AE491A09429E00E73566 /* Build configuration list for PBXNativeTarget "AddressbookPullAndMulti-Select" */;
+			buildPhases = (
+				AAE5AE221A09429E00E73566 /* Sources */,
+				AAE5AE231A09429E00E73566 /* Frameworks */,
+				AAE5AE241A09429E00E73566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AddressbookPullAndMulti-Select";
+			productName = "AddressbookPullAndMulti-Select";
+			productReference = AAE5AE261A09429E00E73566 /* AddressbookPullAndMulti-Select.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAE5AE3E1A09429E00E73566 /* AddressbookPullAndMulti-SelectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE5AE4C1A09429E00E73566 /* Build configuration list for PBXNativeTarget "AddressbookPullAndMulti-SelectTests" */;
+			buildPhases = (
+				AAE5AE3B1A09429E00E73566 /* Sources */,
+				AAE5AE3C1A09429E00E73566 /* Frameworks */,
+				AAE5AE3D1A09429E00E73566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE5AE411A09429E00E73566 /* PBXTargetDependency */,
+			);
+			name = "AddressbookPullAndMulti-SelectTests";
+			productName = "AddressbookPullAndMulti-SelectTests";
+			productReference = AAE5AE3F1A09429E00E73566 /* AddressbookPullAndMulti-SelectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAE5AE1E1A09429E00E73566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = TerryBuOrganization;
+				TargetAttributes = {
+					AAE5AE251A09429E00E73566 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					AAE5AE3E1A09429E00E73566 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = AAE5AE251A09429E00E73566;
+					};
+				};
+			};
+			buildConfigurationList = AAE5AE211A09429E00E73566 /* Build configuration list for PBXProject "AddressbookPullAndMulti-Select" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAE5AE1D1A09429E00E73566;
+			productRefGroup = AAE5AE271A09429E00E73566 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAE5AE251A09429E00E73566 /* AddressbookPullAndMulti-Select */,
+				AAE5AE3E1A09429E00E73566 /* AddressbookPullAndMulti-SelectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAE5AE241A09429E00E73566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE5AE5E1A0942B400E73566 /* LandingPageController.xib in Resources */,
+				AAE5AE601A0942B400E73566 /* TBMultiselectController.xib in Resources */,
+				AAE5AE3A1A09429E00E73566 /* LaunchScreen.xib in Resources */,
+				AAE5AE371A09429E00E73566 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE5AE3D1A09429E00E73566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAE5AE221A09429E00E73566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE5AE611A0942B400E73566 /* TBContactsGrabber.m in Sources */,
+				AAE5AE5D1A0942B400E73566 /* LandingPageController.m in Sources */,
+				AAE5AE5F1A0942B400E73566 /* TBMultiselectController.m in Sources */,
+				AAE5AE5B1A0942B400E73566 /* AppDelegate.m in Sources */,
+				AAE5AE5C1A0942B400E73566 /* Contact.m in Sources */,
+				AAE5AE2C1A09429E00E73566 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE5AE3B1A09429E00E73566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE5AE461A09429E00E73566 /* AddressbookPullAndMulti_SelectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAE5AE411A09429E00E73566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAE5AE251A09429E00E73566 /* AddressbookPullAndMulti-Select */;
+			targetProxy = AAE5AE401A09429E00E73566 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAE5AE381A09429E00E73566 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAE5AE391A09429E00E73566 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAE5AE471A09429E00E73566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAE5AE481A09429E00E73566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAE5AE4A1A09429E00E73566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "AddressbookPullAndMulti-Select/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AAE5AE4B1A09429E00E73566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "AddressbookPullAndMulti-Select/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AAE5AE4D1A09429E00E73566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AddressbookPullAndMulti-SelectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressbookPullAndMulti-Select.app/AddressbookPullAndMulti-Select";
+			};
+			name = Debug;
+		};
+		AAE5AE4E1A09429E00E73566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AddressbookPullAndMulti-SelectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressbookPullAndMulti-Select.app/AddressbookPullAndMulti-Select";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAE5AE211A09429E00E73566 /* Build configuration list for PBXProject "AddressbookPullAndMulti-Select" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE5AE471A09429E00E73566 /* Debug */,
+				AAE5AE481A09429E00E73566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE5AE491A09429E00E73566 /* Build configuration list for PBXNativeTarget "AddressbookPullAndMulti-Select" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE5AE4A1A09429E00E73566 /* Debug */,
+				AAE5AE4B1A09429E00E73566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AAE5AE4C1A09429E00E73566 /* Build configuration list for PBXNativeTarget "AddressbookPullAndMulti-SelectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE5AE4D1A09429E00E73566 /* Debug */,
+				AAE5AE4E1A09429E00E73566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAE5AE1E1A09429E00E73566 /* Project object */;
+}
