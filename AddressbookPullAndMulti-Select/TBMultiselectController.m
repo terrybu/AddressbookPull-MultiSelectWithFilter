@@ -122,6 +122,7 @@
         selectedContact = [self.tbContactsGrabber.savedArrayOfContactsWithPhoneNumbers objectAtIndex:indexPath.row];
         if (selectedContact.checkmarkFlag == YES) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
         }
         else if (selectedContact.checkmarkFlag == NO) {
             cell.accessoryType = UITableViewCellAccessoryNone;
@@ -170,8 +171,7 @@
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    Contact *selectedContact;
-    selectedContact = [self.tbContactsGrabber.savedArrayOfContactsWithPhoneNumbers objectAtIndex:indexPath.row];
+    Contact *selectedContact = [self.tbContactsGrabber.savedArrayOfContactsWithPhoneNumbers objectAtIndex:indexPath.row];
     selectedContact.checkmarkFlag = NO;
     cell.accessoryType = UITableViewCellAccessoryNone;
     [self.selectedContacts removeObject:selectedContact];
