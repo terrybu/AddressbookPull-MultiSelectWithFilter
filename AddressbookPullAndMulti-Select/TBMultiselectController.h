@@ -17,7 +17,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 
-
+- (IBAction)sendButton: (id) sender;
 - (IBAction)customBackXButton:(id)sender;
 
 

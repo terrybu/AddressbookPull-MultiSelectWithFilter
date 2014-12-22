@@ -9,7 +9,10 @@
 #import "TBMultiselectController.h"
 
 
-@interface TBMultiselectController ()
+@interface TBMultiselectController () {
+    int selectedCounter;
+    UIBarButtonItem *selectedContactsCounterButton;
+}
 
 @property (nonatomic, strong) NSMutableArray *searchResults;
 @property (nonatomic, strong) NSMutableArray *selectedContacts;
@@ -20,8 +23,6 @@
 
 
 @implementation TBMultiselectController
-
-
 
 
 - (void)viewDidLoad {
@@ -37,8 +38,11 @@
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     self.title = @"Invite Friends";
     
-    UIBarButtonItem *rightButtonSend = [[UIBarButtonItem alloc]initWithTitle:@"SEND" style:UIBarButtonItemStylePlain target:nil action:nil];
-    self.navigationItem.rightBarButtonItem = rightButtonSend;
+    UIBarButtonItem *rightButtonSend = [[UIBarButtonItem alloc]initWithTitle:@"SEND" style:UIBarButtonItemStylePlain target:self action:@selector(sendButton:)];
+    
+    selectedContactsCounterButton = [[UIBarButtonItem alloc]initWithTitle: [NSString stringWithFormat:@"sel: %d", selectedCounter] style:UIBarButtonItemStylePlain target:self action:nil];
+    
+    self.navigationItem.rightBarButtonItems = @[rightButtonSend, selectedContactsCounterButton];
     UIBarButtonItem *leftButtonBack = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(customBackXButton:)];
     self.navigationItem.leftBarButtonItem = leftButtonBack;
     [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
@@ -52,6 +56,8 @@
 - (void) viewDidAppear:(BOOL)animated {
     [self.tableView reloadData];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -77,9 +83,34 @@
 - (void)searchDisplayController:(UISearchDisplayController *)controller didHideSearchResultsTableView:(UITableView *)tableView {
     [tableView reloadData];
     [self.tableView reloadData]; //these two lines make sure that both Filterview and Tableview data are refreshed - without it, it doesn't work
+}
+- (void)searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
+
+{
+    
+    [self.searchDisplayController.searchBar setShowsCancelButton:YES animated:NO];
+    
+    UIButton *cancelButton;
+    
+    UIView *topView = self.searchDisplayController.searchBar.subviews[0];
+    
+    for (UIView *subView in topView.subviews) {
+        
+        if ([subView isKindOfClass:NSClassFromString(@"UINavigationButton")]) {
+            
+            cancelButton = (UIButton*)subView;
+            
+        }
+        
+    }
+    
+    if (cancelButton) {
+        
+        [cancelButton setTitle:@"Done" forState:UIControlStateNormal];
+        
+    }
     
 }
-
 
 
 #pragma mark Tableview Delegate Methods
@@ -166,6 +197,8 @@
     }
     
     NSLog(self.selectedContacts.description);
+    selectedCounter = self.selectedContacts.count;
+    selectedContactsCounterButton.title = [NSString stringWithFormat:@"sel: %d", selectedCounter];
 }
 
 
@@ -177,13 +210,31 @@
     [self.selectedContacts removeObject:selectedContact];
     
     NSLog(self.selectedContacts.description);
+    selectedCounter = self.selectedContacts.count;
+    selectedContactsCounterButton.title = [NSString stringWithFormat:@"sel: %d", selectedCounter];
 }
 
 
 
 
 #pragma mark IBActions and custom methods
-
+- (IBAction) sendButton: (id) sender {
+    
+    NSMutableString *myString = [[NSMutableString alloc]initWithString:@""];
+    
+    for (int i=0; i < self.selectedContacts.count; i++) {
+        Contact *myContact = self.selectedContacts[i];
+        [myString appendString:[NSString stringWithFormat:@"%@ %@ ", myContact.firstName, myContact.lastName]];
+    }
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Selected Names"
+                                                    message:myString
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    
+}
 
 - (IBAction)customBackXButton:(id)sender {
     
