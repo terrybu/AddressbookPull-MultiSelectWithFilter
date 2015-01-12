@@ -41,6 +41,7 @@
                 <constraint firstAttribute="bottom" secondItem="xxw-Qy-FZA" secondAttribute="bottom" constant="-17" id="FHc-vI-VIf"/>
                 <constraint firstAttribute="trailing" secondItem="xxw-Qy-FZA" secondAttribute="trailing" id="YId-fq-Wfy"/>
             </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="114" y="139"/>
         </view>
         <searchDisplayController id="PIU-l4-h8g">

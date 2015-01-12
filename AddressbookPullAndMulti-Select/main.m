@@ -2,7 +2,7 @@
 //  main.m
 //  AddressbookPullAndMulti-Select
 //
-//  Created by Aditya Narayan on 11/4/14.
+//  Created by Terry Bu on 11/4/14.
 //  Copyright (c) 2014 TerryBuOrganization. All rights reserved.
 //
 

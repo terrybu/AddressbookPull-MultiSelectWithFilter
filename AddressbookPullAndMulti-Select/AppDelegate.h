@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  MultiSelectUIXibVersion
 //
-//  Created by Aditya Narayan on 10/28/14.
+//  Created by Terry Bu on 10/28/14.
 //  Copyright (c) 2014 TurnToTech. All rights reserved.
 //
 
