@@ -1,14 +1,4 @@
-*.pem
-*.zip
-*.jpeg
-*.jpg
-*.gif
-*.mp3
-*.wav
 
-*.json
-
-TabApp/Images.xcassets/
 # Xcode
 #
 build/
